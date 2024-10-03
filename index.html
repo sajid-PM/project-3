@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bbd-single-page</title>
+    
+<!--bootstrap-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/1b9c76b1bc.js" crossorigin="anonymous"></script>
+
+    <!--fontawesome(icons)-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/1b9c76b1bc.js" crossorigin="anonymous"></script>
+
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Montserrat:wght@100;400;900&family=Nanum+Gothic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .nav-link{
+            font-family:"Dmsans", sans-serif !important;
+            font-weight: 200 !important;
+            font-size: 1rem !important;
+        }
+        .nav-item{
+                padding: 0 2em;
+            }
+    </style>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+ 
+
+<!--navigation bar-->
+<section>
+    <div class="container">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg fixed-top" style="background-color: rgba(255, 255, 255, 0.797);">
+                <a class="navbar-brand"  style="color: black; font-family: Poppins, sans-serif; font-weight: 500;" href="#">BBD Workshop</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav w-100 justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" style="color: black;"  aria-current="page" href="#service">How it works</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active"  style="color:black;" aria-current="page" href="#team">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active"  style="color:black;" aria-current="page" href="#pricing">Pricing</a>
+                        </li>
+                    </ul>
+                    <!-- right-end-content -->
+                    <a href="tel:+18005552569" class="request-demo">
+                        <span class="hover-text">Request a Demo</span>
+                    </a>
+                    <a href="tel:+18005552569" class="login">
+                        <span class="hover-text">Login</span>
+                    </a>
+                    <a href="tel:+18005552569" type="button" class="sign-up">
+                        <span class="hover-text">Sign Up</span>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </div>
+</section>
+
+
+<!--promo-section-->
+<section class="promo-section">
+    <div class="promo-text">
+        <h1>Easy Ways to Promote Your Services</h1>
+        <p class="sub-text">Start your business today with a great and strong landing page made to enhance the marketer's workflow.</p>
+        <button class="get-started-btn">Get Started</button>
+        <div class="credit-card-info">
+            <span class="checkmark">✔️</span> No Credit card required
+        </div>
+        <div class="rating">
+            <img src="path-to-logo.png" alt="Rating Logo" class="rating-logo"> <!-- Add the logo -->
+            <span class="rating-star">★</span> <!-- Single star -->
+            <strong class="rating-number">4.9</strong> <!-- Rating number -->
+            <span class="rating-reviews">(390 reviews)</span> <!-- Number of reviews -->
+        </div>
+        
+        
+    </div>
+     
+    <img src="shaps-line.png" alt="" class="lineshape">
+
+    <div class="form-container">
+        <h1>Get a Quote</h1>
+        <p>Marketing Business campaign</p>
+
+
+        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="3892eb41-699c-496a-b49f-0419c3b4f6c0" />
+            <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
+            <input type="hidden" name="from_name" value="My Website" />
+            <div class="input-field">
+                <input type="text" placeholder="Complete Name">
+                <i class="fa fa-user"></i>
+            </div>
+            
+            <div class="input-field">
+                <input type="email" placeholder="Email Address">
+                <i class="fa fa-envelope"></i>
+            </div>
+            
+            <div class="input-field">
+                <input type="tel" placeholder="Phone No">
+                <i class="fa fa-phone"></i>
+            </div>
+
+            <div class="radio-group">
+                <label><input type="radio" name="consult" value="Virtual"> Virtual</label>
+                <label><input type="radio" name="consult" value="In-Office"> In-Office</label>
+            </div>
+
+            <button class="submit-btn">Start Free Trial</button>
+        </form>
+    </div>
+
+</section>
+
+<!--stats-section-->
+<section class="design-section" id="about">
+    <div class="content">
+        <h1>Unlimited Design At <br> The <span>Next Level</span></h1>
+        <p>Component library to build your own components and pieces of UI. Reuse existing Hero, sections</p>
+    </div>
+
+    <div class="image-wrapper">
+        <img src="meeting.jpg" alt="Team Meeting" class="meeting-image">
+    </div>
+
+    <div class="stats">
+        <div class="stat-item">
+            <div class="stat-content">
+                <span class="number" data-target="40">0</span>
+                <p>Professional Team Members</p>
+            </div>
+            <i class="fas fa-users"></i> <!-- Icon for Team Members -->
+        </div>
+        <div class="stat-item">
+            <div class="stat-content">
+                <span class="number" data-target="14000">0</span>
+                <p>Completed Projects</p>
+            </div>
+            <i class="fas fa-tasks"></i> <!-- Icon for Projects -->
+        </div>
+        <div class="stat-item">
+            <div class="stat-content">
+                <span class="number" data-target="10000">0</span>
+                <p>Happy Satisfied Customers</p>
+            </div>
+            <i class="fas fa-smile"></i> <!-- Icon for Happy Customers -->
+        </div>
+    </div>
+</section>
+
+<!-- GET STARTED --> 
+<section class="get-started">
+    <h1>How Do You Get Started?</h1>
+    <div class="card-container">
+        <div class="card" id="card1">
+            <div class="icon"><img src="email-icon.png" alt="Email"></div>
+            <h2>1</h2>
+            <p>Send us a free email with all the information.</p>
+            <span class="description">We provide world-class services for every type of business.</span>
+        </div>
+        <div class="card" id="card2">
+            <div class="icon"><img src="team-icon.png" alt="Team Work"></div>
+            <h2>2</h2>
+            <p>Our team will work full time on your mission.</p>
+            <span class="description">We provide world-class services for every type of business.</span>
+        </div>
+        <div class="card" id="card3">
+            <div class="icon"><img src="pay-icon.png" alt="Pay"></div>
+            <h2>3</h2>
+            <p>Pay only if you're satisfied with the result!</p>
+            <span class="description">We provide world-class services for every type of business.</span>
+        </div>
+    </div>
+</section>
+
+<!--WHAT WE DO-->
+<div class="section-wrapper">
+    <div class="content-box">
+        <h1>We Provide The <span style="color: green;">Solutions</span> To Grow Your Business</h1>
+        <p>Increase your efficiencies, and create a better experience for everyone involved. Automate your workflows with tools you use every day.</p>
+        <ul>
+            <li>User-friendly platform to learn in your way</li>
+            <li>Packed with modern technology</li>
+            <li>Become a tool for payment, settlement, and clearing</li>
+        </ul>
+    </div>
+    <div class="image-wrapper">
+        <img src="business-placeholder.png" alt="Business Solution Illustration">
+    </div>
+</div>
+
+<!-- Partner Logos Carousel -->
+<div class="trusted-by-text">
+    <p>We’re trusted by industry leaders</p>
+</div>
+<div class="partner-logos-wrapper">
+    <div class="partner-logos">
+        <img src="clients1.png" alt="Mention">
+        <img src="clients2.png" alt="Fintory">
+        <img src="clients3.png" alt="TRDS">
+        <img src="clients4.png" alt="Display Contracts">
+        <img src="clients1.png" alt="Mention">
+        <img src="clients2.png" alt="Fintory">
+        <img src="clients3.png" alt="TRDS">
+        <img src="clients4.png" alt="Display Contracts">
+    </div>
+</div>
+
+
+<!--learning-->
+<section class="platform-control-section">
+    <div class="content-wrapper">
+      <div class="text-content">
+        <h1>Full control in one platform fits all</h1>
+        <p>
+          Companies conducting supply chain audits will better understand the
+          strengths and weaknesses in their supply chains.
+        </p>
+        <a href="#" class="cta-button">Get started now</a>
+      </div>
+      <div class="image-content">
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="prj1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="prj1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="prj1.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      </div>
+    </div>
+</section>
+  
+
+<!--team-->
+<section class="team-section" id="team">
+    <h1>Meet Our <span class="highlight">Awesome</span> People</h1>
+    <p class="description">
+        Component library to build your own components and pieces of UI. Reuse existing Hero, sections.
+    </p>
+
+    <div class="team-container">
+        <div class="rating-card">
+            <div class="rating">
+                <div class="rating-logo">
+                    <img src="logo.png" alt="Company Logo">
+                </div>
+                <div class="rating-info">
+                    <h2>4.9 <span>/5</span></h2>
+                    <p>Clients rate professionals on Google.</p>
+                    <div class="stars">
+                        <span>★★★★★</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="team-card">
+            <div class="card-header">
+                <img src="person1.jpg" alt="Oliva Rahina">
+            </div>
+            <div class="card-body">
+                <h3>Oliva Rahina</h3>
+                <p class="role">Web Developer</p>
+                <p class="phone">Ph. +01 2342543378</p>
+                <div class="social">
+                    <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                    <a href="#"><img src="instagram.png" alt="Twitter"></a>
+                    <a href="#"><img src="linkedin.png" alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="team-card">
+            <div class="card-header">
+                <img src="person1.jpg" alt="Oliva Rahina">
+            </div>
+            <div class="card-body">
+                <h3>Oliva Rahina</h3>
+                <p class="role">Web Developer</p>
+                <p class="phone">Ph. +01 2342543378</p>
+                <div class="social">
+                    <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                    <a href="#"><img src="instagram.png" alt="Twitter"></a>
+                    <a href="#"><img src="linkedin.png" alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="team-card">
+            <div class="card-header">
+                <img src="person2.jpg" alt="Petar Poline">
+            </div>
+            <div class="card-body">
+                <h3>Petar Poline</h3>
+                <p class="role">Graphic Designer</p>
+                <p class="phone">Ph. +01 2342543378</p>
+                <div class="social">
+                    <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                    <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="instagram.png" alt="Twitter"></a>
+                    <a href="#"><img src="linkedin.png" alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--testimonial-->
+<div class="carousel-container">
+    <!-- Floating avatars (Top) -->
+    <div class="floating-avatars top">
+        <img src="avatar1.png" alt="Avatar 1" class="floating-avatar">
+        <img src="avatar2.png" alt="Avatar 2" class="floating-avatar">
+        <img src="avatar3.png" alt="Avatar 3" class="floating-avatar">
+        <img src="avatar1.png" alt="Avatar 4" class="floating-avatar">
+        <img src="avatar3.png" alt="Avatar 5" class="floating-avatar">
+    </div>
+
+    <div class="carousel">
+        <!-- Review 1 -->
+        <div class="review active">
+            <div class="customer-profile">
+                <img src="profile1.png" alt="Martha Smith">
+                <p class="customer-name">Martha Smith <span>at Google</span></p>
+                <div class="stars">
+                    &#9733;&#9733;&#9733;&#9733;&#9733;
+                </div>
+            </div>
+            <div class="review-text">
+                <p>“This is one of the most transparent referral programs I’ve ever used before. Besides, it’s double-sided and it lets me not only share a great service with my friends, but to earn and make them earn as well. I earned money by sharing referral link on Facebook.”</p>
+            </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="review">
+            <div class="customer-profile">
+                <img src="profile1.png" alt="John Doe">
+                <p class="customer-name">John Doe <span>at Apple</span></p>
+                <div class="stars">
+                    &#9733;&#9733;&#9733;&#9733;&#9733;
+                </div>
+            </div>
+            <div class="review-text">
+                <p>“The referral system is excellent. I’ve earned quite a bit by sharing links with my friends on social media. Highly recommended!”</p>
+            </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="review">
+            <div class="customer-profile">
+                <img src="profile1.png" alt="Jane Doe">
+                <p class="customer-name">Jane Doe <span>at Microsoft</span></p>
+                <div class="stars">
+                    &#9733;&#9733;&#9733;&#9733;&#9733;
+                </div>
+            </div>
+            <div class="review-text">
+                <p>“This program makes it easy to share with my network, and the rewards are fantastic! It’s a win-win for everyone involved.”</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating avatars (Bottom) -->
+    <div class="floating-avatars bottom">
+        <img src="avatar1.png" alt="Avatar 6" class="floating-avatar">
+        <img src="avatar2.png" alt="Avatar 7" class="floating-avatar">
+        <img src="avatar3.png" alt="Avatar 8" class="floating-avatar">
+        <img src="avatar2.png" alt="Avatar 9" class="floating-avatar">
+        <img src="avatar1.png" alt="Avatar 10" class="floating-avatar">
+    </div>
+
+    <!-- Dots Navigation -->
+    <div class="dots-navigation">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+</div>
+
+<!--pricing-->
+<section class="pricing-section" id="pricing">
+    <h1>Choose A <span class="highlight"> Plan</span> That Works For You</h1>
+    <p class="subheading">Component library to build your own components and pieces of UI. Reuse existing Hero, sections.</p>
+
+    <!-- Add Toggle Switch for Monthly/Yearly -->
+    <div class="toggle-container">
+        <span>Monthly</span>
+        <label class="switch">
+            <input type="checkbox" id="pricingToggle">
+            <span class="slider round"></span>
+        </label>
+        <span>Yearly</span>
+    </div>
+
+    <div class="cards-container">
+        <div class="pricing-card" id="individuals">
+            <h2>Individuals</h2>
+            <p>ecommerce solution and a marketing hub, all in one.</p>
+            <ul>
+                <li>24x7 Premium support</li>
+                <li>Site Optimisation</li>
+                <li>Monthly Report</li>
+                <li>No Minimum Term</li>
+            </ul>
+            <!-- Add both Monthly and Yearly Prices -->
+            <div class="price" data-monthly="90" data-yearly="1080">$90 / month</div>
+            <a href="#" class="subscribe-btn">Subscribe Now</a>
+        </div>
+        <div class="pricing-card" id="professionals">
+            <h2>Professionals</h2>
+            <p>ecommerce solution and a marketing hub, all in one.</p>
+            <ul>
+                <li>24x7 Premium support</li>
+                <li>Site Optimisation</li>
+                <li>Monthly Report</li>
+                <li>No Minimum Term</li>
+            </ul>
+            <div class="price" data-monthly="160" data-yearly="1920">$160 / month</div>
+            <a href="#" class="subscribe-btn">Subscribe Now</a>
+        </div>
+        <div class="pricing-card" id="business">
+            <h2>Business</h2>
+            <p>ecommerce solution and a marketing hub, all in one.</p>
+            <ul>
+                <li>24x7 Premium support</li>
+                <li>Site Optimisation</li>
+                <li>Monthly Report</li>
+                <li>No Minimum Term</li>
+            </ul>
+            <div class="price" data-monthly="290" data-yearly="3480">$290 / yearly</div>
+            <a href="#" class="subscribe-btn">Subscribe Now</a>
+        </div>
+    </div>
+</section>
+
+<!-- App Download Section -->
+<section class="app-download-section">
+    <h1>Ready to download <br> an awesome app?</h1>
+    <p>soluta nobis est eligendi optio cumque nihil impedit quo minus minim veniam, quis nostrud exercitation ullamco laboris</p>
+
+    <div class="app-buttons">
+        <a href="https://www.apple.com/app-store/" class="app-store-btn" target="_blank">
+            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+        <a href="https://play.google.com/store" class="google-play-btn" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+    </div>
+</section>
+
+<!--faq section-->
+<section class="unique-faq-section" id="faq">
+    <h1>Frequently Asked <span class="unique-highlight">Questions</span></h1>
+    <p class="unique-description">
+        Component library to build your own components and pieces of UI. Reuse existing Hero, sections.
+    </p>
+
+    <div class="unique-faq-container">
+        <div class="unique-faq">
+            <button class="unique-faq-question" aria-expanded="false">
+                <span>What Is The Main Purpose Of A Landing Page?</span>
+                <i class="unique-arrow">&#x25B6;</i>
+            </button>
+            <div class="unique-faq-answer">
+                <p>A landing page aims to capture information from contacts in exchange for something of value, such as a retail offer code or business-to-business (B2B) insights in the form of a white paper.</p>
+            </div>
+        </div>
+
+        <div class="unique-faq">
+            <button class="unique-faq-question" aria-expanded="false">
+                <span>What Do My Prospects Need To Know In Order To Accept My Offer?</span>
+                <i class="unique-arrow">&#x25B6;</i>
+            </button>
+            <div class="unique-faq-answer">
+                <p>A landing page is intended to provide all the necessary details your prospects need to trust your offer, including clear benefits and a strong call to action.</p>
+            </div>
+        </div>
+
+        <div class="unique-faq">
+            <button class="unique-faq-question" aria-expanded="false">
+                <span>Will I Learn How To Code Websites As Well?</span>
+                <i class="unique-arrow">&#x25B6;</i>
+            </button>
+            <div class="unique-faq-answer">
+                <p>Our courses cover a wide range of subjects, including how to design, develop, and code websites effectively, even for beginners.</p>
+            </div>
+        </div>
+
+        <div class="unique-faq">
+            <button class="unique-faq-question" aria-expanded="false">
+                <span>Understand And Analyze The Information?</span>
+                <i class="unique-arrow">&#x25B6;</i>
+            </button>
+            <div class="unique-faq-answer">
+                <p>We provide tools and insights to help you analyze and interpret the data captured from your landing page effectively.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--recent news-->
+<div class="recent-news-wrapper">
+    <div class="recent-news-header">
+        <h2>Recent <span style="color: green;">News</span></h2>
+        <p>Component library to build your own components and pieces of UI. Reuse existing Hero, sections</p>
+    </div>
+
+    <div class="news-cards">
+        <!-- News Card 1 -->
+        <div class="news-card">
+            <div class="news-date">📅 Dec 14, 2024</div>
+            <img src="news-image1.jpg" alt="News Image 1">
+            <div class="news-content">
+                <span class="news-category">Development</span>
+                <div class="news-title">Hiring Your Startup’s First Customer Success Lead</div>
+                <div class="news-meta">
+                    <span class="author">by Admin</span>
+                    <span class="comments">2 Comments</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- News Card 2 -->
+        <div class="news-card">
+            <div class="news-date">📅 Dec 14, 2024</div>
+            <img src="news-image2.jpg" alt="News Image 2">
+            <div class="news-content">
+                <span class="news-category">Development</span>
+                <div class="news-title">Hiring Your Startup’s First Customer Success Lead</div>
+                <div class="news-meta">
+                    <span class="author">by Admin</span>
+                    <span class="comments">2 Comments</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- News Card 3 -->
+        <div class="news-card">
+            <div class="news-date">📅 Dec 14, 2024</div>
+            <img src="news-image3.jpg" alt="News Image 3">
+            <div class="news-content">
+                <span class="news-category">Development</span>
+                <div class="news-title">Hiring Your Startup’s First Customer Success Lead</div>
+                <div class="news-meta">
+                    <span class="author">by Admin</span>
+                    <span class="comments">2 Comments</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--footer-->
+<footer class="footer-section">
+    <div class="container">
+        <div class="footer-heading">
+            <h1>Start Your Business <br> And <span>Achieve Goals</span></h1>
+            <p>Great and strong landing page made to enhance the marketer's workflow.</p>
+            <a href="#" class="quote-btn">Get A Quote</a>
+        </div>
+
+        <div class="footer-contact">
+            <div class="contact-item">
+                <div class="icon-box">
+                   <a href="tel:+18005552569"><i class="fas fa-phone"></i></a> 
+                </div>
+                <div class="contact-details">
+                    <h3>Phone:</h3>
+                    <a href="tel:+18005552569"><p>Home: +1 3317662</p></a>
+                    <a href="tel:+18005552569"><p>Office: +1 444494512</p></a>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="icon-box">
+                    <a href="googlemaps.com"><i class="fas fa-map-marker-alt"></i></a>
+                </div>
+                <div class="contact-details">
+                    <h3>Address:</h3>
+                    <a href="googlemaps.com"><p>New town 244 Go Up Street Ltd</p></a>
+                    <a href="googlemaps.com"><p>79 United States</p></a>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="icon-box">
+                    <a href="mailto:bchwbvcer"><i class="fas fa-envelope"></i></a>
+                </div>
+                <div class="contact-details">
+                    <h3>Email:</h3>
+                    <a href="mailto:bchwbvcer"><p>info@domainname.com</p></a>
+                    <a href="mailto:bchwbvcer"><p>business@domain.com</p></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-logo">
+                <img src="anex-logo.png" alt="BBD Logo">
+                <p>&copy; 2023 BBD by 4K GBL. All Rights Reserved.</p>
+            </div>
+
+            <div class="footer-socials">
+                <a href="facebook.com"><i class="fab fa-facebook-f"></i></a>
+                <a href="youtube.com"><i class="fab fa-youtube"></i></a>
+                <a href="twitter.com"><i class="fab fa-twitter"></i></a>
+                <a href="instagram.com"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <a href="#" id="scrollToTop" class="scroll-to-top">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+    </div>
+</footer>
+
+<script src="index.js"></script>
+
+</body>
+</html>
