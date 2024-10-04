@@ -124,7 +124,6 @@ dots.forEach((dot, index) => {
         showReview(currentReview);
     });
 });
-//pricing toggler
 // JavaScript to switch between monthly and yearly pricing
 document.getElementById('pricingToggle').addEventListener('change', function() {
     const isYearly = this.checked;
@@ -133,10 +132,19 @@ document.getElementById('pricingToggle').addEventListener('change', function() {
     prices.forEach(price => {
         const monthlyPrice = price.getAttribute('data-monthly');
         const yearlyPrice = price.getAttribute('data-yearly');
+
+        // Get the price-amount and price-term spans inside the price container
+        const priceAmount = price.querySelector('.price-amount');
+        const priceTerm = price.querySelector('.price-term');
+
         if (isYearly) {
-            price.textContent = `$${yearlyPrice} / year`;
+            // Update for yearly pricing
+            priceAmount.textContent = `$${yearlyPrice}`;
+            priceTerm.textContent = '/ year';
         } else {
-            price.textContent = `$${monthlyPrice} / month`;
+            // Update for monthly pricing
+            priceAmount.textContent = `$${monthlyPrice}`;
+            priceTerm.textContent = '/ month';
         }
     });
 });
