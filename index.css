@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'poppins', sans-serif;
+    font-family: 'DM Sans', sans-serif;
     background-color: #ffffff;
     color: #333;
     scroll-behavior: smooth;
@@ -26,7 +26,7 @@ body {
 
 
 .nav-links {
-    font-family: "Poppins", sans-serif;
+    font-family: "DM Sans", sans-serif;
     font-style: normal;
     text-decoration: none;
     font-size: 16px;
@@ -887,6 +887,199 @@ body {
   }
   
   
+/*features*/
+/* Heading section */
+.features-heading-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.features-heading-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: green;
+    margin: 2rem 0;
+}
+
+.features-heading-description {
+    font-size: 1rem;
+    color: #6b6b6b;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px){
+    .features-heading-section{
+        padding: 2rem;
+    }
+
+    .features-heading-title{
+        font-size: 1.9rem;
+    }
+
+}
+
+
+/* Unique features section container */
+.unique-features-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 80px;
+    gap: 20px;
+}
+
+/* Columns for left and right sections */
+.unique-features-column {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.unique-features-left, .unique-features-right {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling for individual feature cards */
+.unique-feature-card {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    position: relative;
+    min-height: 170px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1), 0px 4px 10px rgba(0, 0, 0, 0.04);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid transparent;
+    background-clip: padding-box;
+}
+
+.unique-feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.15);
+    border-image-source: linear-gradient(135deg, #007bff, #00d4ff);
+    border-image-slice: 1;
+}
+
+/* Feature title styling */
+.unique-feature-title {
+    font-size: 1.4rem;
+    color: green;
+    font-weight: 600;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+/* Feature description styling */
+.unique-feature-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #6b6b6b;
+    margin-bottom: 25px;
+}
+
+/* Learn more link */
+.unique-feature-link {
+    color: green;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 2px;
+    transition: all 0.3s ease;
+}
+
+.unique-feature-link::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #007bff;
+    transition: transform 0.3s ease;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+.unique-feature-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* Icon in the bottom right corner of the card */
+.unique-feature-icon {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.unique-feature-icon img {
+    width: 45px;
+    height: 45px;
+    transition: transform 0.3s ease;
+}
+
+.unique-feature-card:hover .unique-feature-icon img {
+    transform: rotate(10deg) scale(1.1);
+}
+
+/* Center image container */
+.unique-features-image-wrapper {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    background: none;
+}
+
+.unique-features-center-image {
+    background: transparent;
+    height: auto;
+    width: 40%;
+    border-radius: 25px;
+    transition: transform 0.3s ease;
+}
+
+.unique-features-center-image:hover {
+    transform: scale(1.02);
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 1200px) {
+    .unique-features-section {
+        padding: 20px 40px;
+    }
+
+    .unique-features-column {
+        width: 25%;
+    }
+
+    .unique-features-center-image {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .unique-features-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .unique-features-column {
+        width: 100%;
+    }
+
+    .unique-features-image-wrapper {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    .unique-features-center-image {
+        width: 100%;
+    }
+}
 
 /* Team Section */
 .team-section {
@@ -1310,14 +1503,12 @@ body {
     }
 }
 
-
 /* Pricing Section */
 .pricing-section {
     text-align: center;
     padding: 6rem;
     margin-top: 9rem;
     background: linear-gradient(to right, #f8d3a7, #c0e7f7);
-
 }
 
 h1 {
@@ -1331,6 +1522,7 @@ h1 {
     color: black;
     margin: 30px 0 40px;
 }
+
 .pricing-section h1 .highlight {
     color: green;
     border-bottom: 5px solid green;
@@ -1359,22 +1551,10 @@ h1 {
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
 }
 
-.pricing-card:hover::before {
-    content: '';
-    position: absolute;
-    top: -20px;
-    left: 2%;
-    transform: translateX(-50%);
-    width: 40px;
-    height: 40px;
-    background: url('3line.png') no-repeat center;
-}
-
 h2 {
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
-
 
 ul {
     list-style: none;
@@ -1386,9 +1566,21 @@ ul li {
     color: green;
 }
 
+/* Styling for Prices */
 .price {
-    font-size: 2rem;
     margin-bottom: 20px;
+}
+
+.price-amount {
+    font-size: 3rem; /* Larger font size for the price */
+    font-weight: bold; /* Bold for emphasis */
+    color: #000; /* Black color */
+}
+
+.price-term {
+    font-size: 1.2rem; /* Smaller font size for the term */
+    color: #666; /* Lighter color for contrast */
+    vertical-align: super; /* Align the term slightly higher */
 }
 
 .subscribe-btn {
@@ -1426,8 +1618,12 @@ ul li {
         font-size: 0.95rem;
     }
 
-    .price {
-        font-size: 1.8rem;
+    .price-amount {
+        font-size: 2.8rem;
+    }
+
+    .price-term {
+        font-size: 1.1rem;
     }
 }
 
@@ -1454,8 +1650,12 @@ ul li {
         font-size: 0.85rem; /* Adjust subheading for smaller screens */
     }
 
-    .price {
-        font-size: 1.5rem;
+    .price-amount {
+        font-size: 2.5rem;
+    }
+
+    .price-term {
+        font-size: 1rem;
     }
 
     .subscribe-btn {
@@ -1478,8 +1678,12 @@ ul li {
         padding: 20px; /* Reduce padding inside cards */
     }
 
-    .price {
-        font-size: 1.4rem; /* Adjust price font size */
+    .price-amount {
+        font-size: 2rem; /* Adjust price font size */
+    }
+
+    .price-term {
+        font-size: 0.9rem;
     }
 
     .subscribe-btn {
@@ -1647,7 +1851,7 @@ input:checked + .slider::before {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    font-family: "poppins",sans-serif;
+    font-family: "DM Sans",sans-serif;
     border: 2px solid black;
 }
 
@@ -1752,7 +1956,7 @@ input:checked + .slider::before {
     text-align: center;
     margin: 50px 15rem;
     max-width: 1200px;
-    font-family: "poppins", sans-serif;
+    font-family: "DM Sans", sans-serif;
 }
 
 .recent-news-header h2 {
@@ -1932,7 +2136,7 @@ input:checked + .slider::before {
     color: #fff;
     padding: 60px 0;
     position: relative;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'DM Sans', sans-serif;
 }
 
 .container {
@@ -1965,7 +2169,8 @@ input:checked + .slider::before {
     display: inline-block;
     background-color: #00ff66;
     color: #000;
-    padding: 14px 32px;
+    width: 30rem;
+    padding: 14px 14px;
     font-size: 1.2rem;
     border-radius: 50px;
     text-align: center;
@@ -2065,6 +2270,11 @@ input:checked + .slider::before {
     .footer-contact {
         flex-direction: column;
         align-items: center;
+    }
+
+    .quote-btn{
+        width: 15rem;
+
     }
     
     .footer-section h1{
