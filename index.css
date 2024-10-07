@@ -807,7 +807,7 @@ body {
   
   .cta-button {
     display: inline-block;
-    background-color: #4668f3; /* Blue button */
+    background-color: green; /* Blue button */
     color: white;
     padding: 0.75rem 2rem;
     text-decoration: none;
@@ -1586,7 +1586,7 @@ ul li {
 .subscribe-btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #000;
+    background-color: green;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
