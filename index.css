@@ -1131,20 +1131,21 @@ body {
 }
 
 .rating-card .rating-logo img {
-    width: 60px;
-    height: 60px;
-    margin-right: 20px;
+    width: 6rem;
+    height: 6rem;
 }
 
 .rating-info {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-left: 4rem;
 }
 
 .rating-info h2 {
     font-size: 60px;
     font-weight: bold;
+    color: white;
     margin-bottom: 10px;
 }
 
@@ -1155,7 +1156,8 @@ body {
 
 .rating-info p {
     font-size: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    color: lightcyan;
 }
 
 .rating-info .stars span {
@@ -2234,7 +2236,7 @@ input:checked + .slider::before {
 }
 
 .footer-logo img {
-    max-width: 100px;
+    max-width: 50px;
 }
 
 .footer-socials a {
